@@ -1,0 +1,505 @@
+/*Style for the navigation bar*/
+nav {
+    background-color: white;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 40px;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 30px; 
+    font-size: 20px;
+}
+
+/* Style for dropdown content */
+.dropdown_contents {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 140px;
+    z-index: 1; /* Ensure dropdown appears above other content */
+}
+
+/* Style for dropdown links */
+.dropdown_contents a {
+    color: black;
+    padding: 10px;
+    display: block; /* Displays the dropdown links as blocks */
+    text-decoration: none; /* Removes the underline in the links */
+    font-size: 20px;
+}
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown_contents {
+    display: block; /* Displays the dropdown content when it is hovering over the dropdown item */
+}
+
+/* Style for the main image */
+.main_image_section {
+    position: relative; /* Establishes a positioning context for absolute positioning */
+    text-align: center; 
+    padding: 10px; /* Add padding around the image */
+    border: 1px solid #ddd; /* Add a border around the image */
+}
+
+.main_image_section img {
+    max-width: 100%; /* Sets the maximum width of the image to 100% of its container */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block; /* Ensures the image behaves as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+/* Style for text overlay */
+.main_image_section .main_image_text {
+    font-size: 30px;
+    position: absolute; /* Position the text absolutely */
+    top: 50%; /* Position from the top */
+    left: 50%; /* Position from the left */
+    transform: translate(-50%, -50%); /* Center the text */
+    color: white; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Text shadow for better readability */
+}
+
+/* Style for the Second image box or container */
+.second_image_box {
+    padding: 20px;
+    margin: 20px;
+    display: flex;/* Uses flexbox as the layout*/
+    align-items: center;
+}
+/* Style for the image in the box container*/
+.second_image {
+    max-width: 200px;/*This is to set the maximum width of the image*/
+    height: auto;/*This is to maintain the image aspect ratio*/
+    margin-right: 20px;/*This is to add a margin to the image to seperate the text and image*/
+}
+/* Style for the text in the box container*/
+.second_image_text {
+    color: #333;
+}
+.second_image_text h2{
+    margin-top: 0; /* Removes the top margin for the heading */
+    font-size: 24px; /* Sets the font size for the heading */
+    text-align: center;
+}
+.second_image_text p {
+    margin-bottom: 0; /* Remove bottom margin for the paragraph */
+    font-size: 20px; /* Sets the font size for the paragraph */
+    text-align: center;
+    margin-left: 50px;
+}
+/* Style for the image in the box container*/
+.second_image_section {
+    position: relative; /* Establishes a positioning context for absolute positioning */
+    text-align: center; 
+    padding: 10px; /* Add padding around the image */
+    border: 1px solid #ddd; /* Add a border around the image */
+}
+.second_image_section img {
+    max-width: 50%; /* Sets the maximum width of the image to 100% of its container */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block; /* Ensures the image behaves as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+/* Style for the third image box container*/
+.third_image_box{
+    padding: 20px;
+    margin: 20px;
+    display: flex;/* Uses flexbox as the layout*/
+    align-items: center;/*This is to align items vertically*/
+}
+/*Style for the image in the box container*/
+.third_image {
+    max-width: 200px;
+    height: auto;
+    margin-left: 20px;/*This is to add a margin to seperate the text from the image[ we use margin-left because we want the text on the left or at the beginning of the container and the image on the end]*/
+    order: 2; /*This is to position the image at the end of the bpx container or the right*/
+}
+/*Style for the third image text in the box container*/
+.third_image_text{
+    color: black;
+}
+.third_image_text h2{
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center;
+}
+.third_image_text p{
+    margin-bottom: 0;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 50px;
+}
+/*Style for the third image in the box container*/
+.third_image_section{
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    border: 1px;
+}
+.third_image_section img{
+    max-width: 50%; /* Sets the maximum width of the image to 100% of its container */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block; /* Ensures the image behaves as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+/* Style for the fourth image box or container */
+.fourth_image_box {
+    padding: 20px;
+    margin: 20px;
+    display: flex;/* Uses flexbox as the layout*/
+    align-items: center;
+}
+/* Style for the image in the box container*/
+.fourth_image {
+    max-width: 200px;/*This is to set the maximum width of the image*/
+    height: auto;/*This is to maintain the image aspect ratio*/
+    margin-right: 20px;/*This is to add a margin to the image to seperate the text and image*/
+}
+/* Style for the text in the box container*/
+.fourth_image_text {
+    color: #333;
+}
+.fourth_image_text h2{
+    margin-top: 0; /* Removes the top margin for the heading */
+    font-size: 24px; /* Sets the font size for the heading */
+    text-align: center;
+}
+.fourth_image_text p {
+    margin-bottom: 0; /* Remove bottom margin for the paragraph */
+    font-size: 20px; /* Sets the font size for the paragraph */
+    text-align: center;
+    margin-left: 50px;
+}
+.fourth_image_text ul li{
+    font-size: 20px; /* Sets the font size for the paragraph */
+    text-align: left;
+    margin-left: 50px;
+}
+/* Style for the image in the box container*/
+.fourth_image_section {
+    position: relative; /* Establishes a positioning context for absolute positioning */
+    text-align: center; 
+    padding: 10px; /* Add padding around the image */
+    border: 1px solid #ddd; /* Add a border around the image */
+}
+.fourth_image_section img {
+    max-width: 50%; /* Sets the maximum width of the image to 100% of its container */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block; /* Ensures the image behaves as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+.fifth_image_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 50px auto;
+  
+}
+.fifth_image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.fifth_image p {
+  margin-top: 10px;
+  text-align: center;
+}
+/* List Styles */
+.fifth_image ol {
+  list-style: decimal; /* Use numbers as the default list style */
+  padding-left: 20px; /* Add some left padding to the list */
+  text-align: center;
+}
+.fifth_image ol li {
+  margin-bottom: 8px; /* Add spacing between list items */
+  text-align: left;
+}
+
+
+
+  /* Styling the footer */
+footer {
+    background-color: white; /* Background color */
+    color: black; /* Text color */
+    text-align: center; /* Center align text */
+ }
+
+
+
+
+  /*Style for content about different wildlife locations*/
+  .location_o1 p{
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  .location_o2 p{
+    font-size:25px;
+  }
+  .location_o3 p{
+    font-size: 25px;
+  }
+  .location_o4 p{
+    font-size: 25px;
+  }
+
+/*Style for Table*/
+table{
+    border-collapse: collapse;/*ensures that the borders of adjacent cells will be collapsed into a single border.*/
+    width: 100%;
+    margin-bottom: 20px;
+}
+th, td{
+    border: 1px solid white;
+    padding: 12px;
+    text-align: left;
+}
+th{
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+/*Hover effect for table rows*/
+tr:hover{
+    background-color: #f5f5f5;
+}
+/*Table container style*/
+.table_container{
+    border: 1px solid #ccc;
+    border-radius: 8px;/* property adds rounded corners to the container.*/
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.dept_wc{
+    font-size: 20px;
+}
+
+/* Flexbox styles for the protected areas section */
+.protected_areas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 20px auto;
+    max-width: 1200px;
+    font-size: 20px;
+  }
+  
+  .area_1 {
+    width: 300px; /* Adjust width as needed */
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .area_1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .area_2 {
+    width: 300px; /* Adjust width as needed */
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .area_2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .area_3 {
+    width: 300px; /* Adjust width as needed */
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .area_3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .area_4 {
+    width: 300px; /* Adjust width as needed */
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .area_4 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .area_5 {
+    width: 300px; /* Adjust width as needed */
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .area_5 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+ 
+  
+  .threat_sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    
+  }
+  .threat_01 {
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.264);
+    padding: 20px;
+  }
+  .threat_01 img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+  .threat_01 p {
+    margin-top: 10px;
+  }
+  .threat_02 {
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.264);
+    padding: 20px;
+  }
+  .threat_02 img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+  .threat_02 p {
+    margin-top: 10px;
+  }
+  .animals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    
+  }
+  .animal_01 {
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.264);
+    padding: 20px;
+  }
+  .animal_01 img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+  /* Style for the links to yala and wilpattu parks */
+.ext_link {
+  position: relative; /* Establishes a positioning context for absolute positioning */
+  text-align: center; 
+  padding: 10px; /* Add padding around the image */
+  border: 1px solid #ddd; /* Add a border around the image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ext_link img {
+  max-width: 100%; /* Sets the maximum width of the image to 100% of its container */
+  height: auto; /* Maintain the image's aspect ratio */
+  display: block; /* Ensures the image behaves as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+  transition: opacity 0.3s ease; /* Add a smooth transition effect */
+}
+.ext_link a:hover img {
+  opacity: 0.8;
+}
+/* Style for text overlay */
+.ext_link .link_txt {
+  font-size: 30px;
+  position: absolute; /* Position the text absolutely */
+  top: 50%; /* Position from the top */
+  left: 50%; /* Position from the left */
+  transform: translate(-50%, -50%); /* Center the text */
+  color: white; /* Text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Text shadow for better readability */
+  text-decoration: none;
+}
+.ext_link_2 {
+  position: relative; /* Establishes a positioning context for absolute positioning */
+  text-align: center; 
+  padding: 10px; /* Add padding around the image */
+  border: 1px solid #ddd; /* Add a border around the image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ext_link_2 img {
+  max-width: 100%; /* Sets the maximum width of the image to 100% of its container */
+  height: auto; /* Maintain the image's aspect ratio */
+  display: block; /* Ensures the image behaves as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+  transition: opacity 0.3s ease; /* Add a smooth transition effect */
+}
+.ext_link_2 a:hover img {
+  opacity: 0.8;
+}
+/* Style for text overlay */
+.ext_link_2 .link_txt_02 {
+  font-size: 30px;
+  position: absolute; /* Position the text absolutely */
+  top: 50%; /* Position from the top */
+  left: 50%; /* Position from the left */
+  transform: translate(-50%, -50%); /* Center the text */
+  color: white; /* Text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Text shadow for better readability */
+  text-decoration: none;
+}
